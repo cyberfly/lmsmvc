@@ -1,0 +1,12 @@
+php artisan generate:migration create_questions_table
+php artisan generate:model Question
+php artisan generate:view admin.questions.index
+php artisan generate:resource question
+php artisan generate:scaffold choice
+php artisan generate:migration add_fields_to_choices_table
+php artisan generate:migration drop_answer_question_table
+php artisan generate:pivot questions choices
+
+php artisan generate:migration add_fields_to_choices_table
+php artisan generate:migration remove_fields_to_choices_table
+php artisan generate:migration drop_choices_table
