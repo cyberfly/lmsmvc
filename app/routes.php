@@ -134,5 +134,6 @@ Route::get('/', array('before' => 'detectLang','uses' => 'BlogController@getInde
 
 # Exam route
 
-// Route::get('exam/', 'ExamController@index');
-Route::get('exam/index', 'ExamController@index');
+Route::get('exams/index', 'ExamController@index');
+Route::post('exams/create', 'ExamController@create');
+Route::get('exams/{exams}/start', 'ExamController@start');

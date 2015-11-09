@@ -4,9 +4,11 @@
 @section('content')
 
 <div class="jumbotron">
+	{{ Form::open(array('url' => 'exams/create')) }}
 	<h1>Mock Up Exam</h1>
 	<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	<p><a role="button" href="#" class="btn btn-lg btn-success">Start Mock Up Exam Now</a></p>
+	<p><button class="btn btn-lg btn-success" type="submit">Start Mock Up Exam Now</button></p>
+	{{ Form::close() }}
 </div>
 
 <div class="row marketing">
